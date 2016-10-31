@@ -1,0 +1,9 @@
+{{ticket-display destroyTicket="destroyTicket"}}
+
+<h2> Tickets </h2>
+
+<ul>
+  {{#each model as |ticket|}}
+    {{ticket-tile ticket=ticket destroyTicket="destroyTicket"}}
+  {{/each}}
+</ul>

@@ -1,0 +1,20 @@
+<div>
+  <form>
+    <div class="form-group">
+      <label for="pair">Please enter your name(s)</label>
+      {{input class="form-control" value=pair id="pair"}}
+    </div>
+
+    <div class="form-group">
+      <label for="location">PLease enter your location</label>
+      {{input class="form-control" value=location id="location"}}
+    </div>
+
+    <div class="form-group">
+      <label for="description">Give a brief description of the issue you are having</label>
+      {{textarea rows="6" class="form-control" value=description id="note"}}
+    </div>
+
+    <button type="button" class="btn btn-primary" {{action 'saveTicket'}}>Ask New Question</button>
+  </form>
+</div>

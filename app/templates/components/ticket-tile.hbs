@@ -1,10 +1,10 @@
 <div class="well">
 
-  <p>{{ticket.pair}}</p>
-  <p>{{ticket.location}}</p>
-  <p>{{ticket.description}}</p>
-  {{moment-from-now ticket.time interval=1000}}
-
+  <p>User(s): {{ticket.pair}}</p>
+  <p>Location: {{ticket.location}}</p>
+  <p>Description: {{ticket.description}}</p>
+  <p>Elapsed Time Since Submission: {{moment-from-now ticket.time interval=1000}}</p>
+  <br>
   <button class="btn btn-warning" {{action 'destroyTicket' ticket}}>Remove Ticket</button>
 
 </div>

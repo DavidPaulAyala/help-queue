@@ -1,7 +1,8 @@
 <h1>Your Ticket is in the Queue...</h1>
 
-<h2>{{model.pair}}</h2>
-<h2>{{model.location}}</h2>
-<h2>{{model.description}}</h2>
+<h2>User(s): {{model.pair}}</h2>
+<h2>Location: {{model.location}}</h2>
+<h2>Description: {{model.description}}</h2>
+<h2>Elapsed Time Since Submission: {{moment-from-now ticket.time interval=1000}}</h2>
 
 <button class="btn btn-warning" {{action 'destroyTicket' model}}>Delete Ticket</button>

@@ -7,6 +7,5 @@ export default Ember.Component.extend({
         this.sendAction('destroyTicket', ticket);
       }
     },
-    
   }
 });

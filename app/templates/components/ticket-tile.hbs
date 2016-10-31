@@ -1,5 +1,10 @@
-<p>{{ticket.pair}}</p>
-<p>{{ticket.location}}</p>
-<p>{{ticket.description}}</p>
+<div class="well">
 
-<button {{action 'destroyTicket' ticket}}>Remove Ticket</button>
+  <p>{{ticket.pair}}</p>
+  <p>{{ticket.location}}</p>
+  <p>{{ticket.description}}</p>
+  {{moment-from-now ticket.time interval=1000}}
+
+  <button class="btn btn-warning" {{action 'destroyTicket' ticket}}>Remove Ticket</button>
+
+</div>

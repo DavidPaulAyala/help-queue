@@ -7,7 +7,7 @@ export default Ember.Component.extend({
         pair: this.get('pair'),
         location: this.get('location'),
         description: this.get('description'),
-        time: moment().format("dddd, MMMM Do YYYY, h:mm a"),
+        time: new Date().getTime(),
         timestamp: moment().unix()
       };
       this.sendAction('saveTicket', params);

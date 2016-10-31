@@ -1,1 +1,5 @@
-{{yield}}
+<ul>
+  {{#each ticket as |ticket|}}
+    {{ticket-tile ticket=ticket destroyTicket="destroyTicket"}}
+  {{/each}}
+</ul>

@@ -6,9 +6,11 @@ export default Ember.Route.extend({
   },
   actions: {
     destroyTicket(ticket) {
-      ticket.destroyRecord();
-      this.transitionTo('user');
+      if(confirm("Are You Sure?")) {
+        ticket.destroyRecord();
+        this.transitionTo('user');
+      }
     },
-    
+
   }
 });
